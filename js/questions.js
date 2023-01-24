@@ -2,57 +2,112 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "Question 1",
+    answer: "Correct",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "Question 2",
+    answer: "Correct",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Question 3",
+    answer: "Correct",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Question 4",
+    answer: "Correct",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "Question 5",
+    answer: "Correct",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
+    ]
+  },
+    {
+    numb: 6,
+    question: "Question 6",
+    answer: "Correct",
+    options: [
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
+    ]
+  },
+    {
+    numb: 7,
+    question: "Question 7",
+    answer: "Correct",
+    options: [
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
+    ]
+  },
+    {
+    numb: 8,
+    question: "Question 8",
+    answer: "Correct",
+    options: [
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
+    ]
+  },
+    {
+    numb: 9,
+    question: "Question 9",
+    answer: "Correct",
+    options: [
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
+    ]
+  },  
+    {
+    numb: 10,
+    question: "Question 10",
+    answer: "Correct",
+    options: [
+      "Correct",
+      "Incorrect",
+      "Incorrect",
+      "Incorrect"
     ]
   },
   // you can uncomment the below codes and make duplicate as more as you want to add question
