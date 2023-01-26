@@ -91,7 +91,7 @@ let questions = [
     {
     numb: 9,
     question: "Question 9",
-    answer: "Correct",
+    answer: "Correcta",
     options: [
       "Correct",
       "Incorrect",

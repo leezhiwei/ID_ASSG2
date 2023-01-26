@@ -1,3 +1,5 @@
+//pts per question
+const ppq = 10;
 //selecting all required elements
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
@@ -9,10 +11,13 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
+const pointCount = $('div.score');
+const nameBox = $('.pname');
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); //show info box
+    console.log(nameBox.val());
 }
 
 // if exitQuiz button clicked
@@ -26,11 +31,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(15); //calling startTimer function
+    startTimer(30); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue =  15;
+let timeValue = 30;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -45,7 +50,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 15; 
+    timeValue = 30; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -121,7 +126,10 @@ function optionSelected(answer){
     const allOptions = option_list.children.length; //getting all option items
     
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
-        userScore += 1; //upgrading score value with 1
+        userScore += ppq; //upgrading score value with 1
+        let pointText = `${userScore} points`
+        console.log(pointText);
+        pointCount.text(pointText);
         answer.classList.add("correct"); //adding green color to correct selected option
         answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
         console.log("Correct Answer");
@@ -195,7 +203,7 @@ function startTimer(time){
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 29);
+    counterLine = setInterval(timer, 56);
     function timer(){
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
