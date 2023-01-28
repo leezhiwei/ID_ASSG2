@@ -177,13 +177,13 @@ body {
     user-select: none;
 }
 
-.quiz_box header .scoreB .score_text{
+.quiz_box header .scoreB .qscore_txt{
     font-weight: 400;
     font-size: 17px;
     user-select: none;
 }
 
-.quiz_box header .scoreB .score_text{
+.quiz_box header .scoreB .score_pts{
     font-size: 18px;
     font-weight: 500;
     height: 30px;
