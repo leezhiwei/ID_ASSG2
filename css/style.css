@@ -67,6 +67,12 @@ div.aniLeft{
     cursor: pointer;
 }
 
+.start_btn button:hover{
+    color: #fff;
+    background: lightcoral;
+    border: 1px solid orangered;
+}
+
 .info_box{
     width: 540px;
     background: #343a40;
@@ -249,7 +255,7 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: black;
+    color: #fff;
     background:lightcoral;
     border: 1px solid orangered;
 }
@@ -325,10 +331,10 @@ footer button{
     cursor: pointer;
     border: none;
     outline: none;
-    color: #fff;
+    color:#343a40;
     border-radius: 5px;
-    background: #007bff;
-    border: 1px solid #007bff;
+    background: coral;
+    border: 1px solid chocolate;
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
@@ -337,7 +343,9 @@ footer button{
 }
 
 footer button:hover{
-    background: #0263ca;
+    color: #fff;
+    background: lightcoral;
+    border: 1px solid orangered;
 }
 
 footer button.show{
@@ -401,25 +409,28 @@ footer button.show{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid chocolate;
     transition: all 0.3s ease;
 }
 
 .buttons button.restart{
-    color: #fff;
-    background: #007bff;
+    color:#343a40;
+    background: coral;
 }
 
 .buttons button.restart:hover{
-    background: #0263ca;
+    color: #fff;
+    background: lightcoral;
+    border: 1px solid orangered;
 }
 
 .buttons button.quit{
-    color: #007bff;
+    color: coral;
     background: #fff;
 }
 
 .buttons button.quit:hover{
     color: #fff;
-    background: #007bff;
+    background: lightcoral;
+    border: 1px solid orangered;
 }
