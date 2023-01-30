@@ -34,7 +34,7 @@ div.aniLeft{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.start_btn,
+.play_btn,
 .info_box,
 .quiz_box,
 .result_box{
@@ -68,6 +68,42 @@ div.aniLeft{
 }
 
 .start_btn button:hover{
+    color: #fff;
+    background: lightcoral;
+    border: 1px solid orangered;
+}
+
+.play_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color:coral;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #343a40;
+    cursor: pointer;
+}
+
+.play_btn button:hover{
+    color: #fff;
+    background: lightcoral;
+    border: 1px solid orangered;
+}
+
+.create_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color:coral;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #343a40;
+    cursor: pointer;
+}
+
+.create_btn button:hover{
     color: #fff;
     background: lightcoral;
     border: 1px solid orangered;
