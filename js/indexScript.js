@@ -1,3 +1,4 @@
+// Altering colour background
 let x = document.body;
 let color = ["fuchsia", "aqua", "limegreen", "chartreuse","silver","cornsilk"];
 setInterval(function() {
@@ -6,6 +7,8 @@ setInterval(function() {
   }
 }, 1111);
 
+
+//Type writer effect
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;

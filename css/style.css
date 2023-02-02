@@ -7,8 +7,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-a{
+a .start_hylink{
     color:coral;
+    text-decoration: none;
+}
+
+a .start_hylink:hover{
+    color:white;
     text-decoration: none;
 }
 
