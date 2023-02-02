@@ -1,4 +1,4 @@
-//pts per question
+//points per question
 const ppq = 10;
 //selecting all required elements
 const play_btn = document.querySelector(".play_btn button");
