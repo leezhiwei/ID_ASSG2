@@ -1,0 +1,12 @@
+body {
+    background-color:orange;
+}
+
+.create_border{
+    flex-basis: 30%;
+    background-color:grey;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    align-items: center;
+}
