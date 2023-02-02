@@ -12,7 +12,7 @@ function waitforqns(){
   }
 }
 waitforqns();
-let questions1 = [
+/* let questions1 = [
     {
     numb: 1,
     question: "Question 1",
@@ -137,4 +137,4 @@ let questions1 = [
   //     "option 4"
   //   ]
   // },
-];
+]; */
