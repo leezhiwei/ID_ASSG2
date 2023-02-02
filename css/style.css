@@ -7,10 +7,20 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+a{
+    color:coral;
+    text-decoration: none;
+}
+
+body .h1 { 
+    color:#343a40; 
+    text-decoration: none;
+}
+
 body {
     background-color: black;
     transition: background-color 2s;
-  }
+}
 
 ::selection{
     color: #fff;
@@ -34,7 +44,7 @@ div.aniLeft{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.start_btn,
+.play_btn,
 .info_box,
 .quiz_box,
 .result_box{
@@ -55,6 +65,24 @@ div.aniLeft{
     transform: translate(-50%, -50%) scale(1);
 }
 
+.play_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color:coral;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #343a40;
+    cursor: pointer;
+}
+
+.play_btn button:hover{
+    color: #fff;
+    background: lightcoral;
+    border: 1px solid orangered;
+}
+
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
@@ -71,6 +99,42 @@ div.aniLeft{
     color: #fff;
     background: lightcoral;
     border: 1px solid orangered;
+}
+
+.start_btn{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.create_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color:coral;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #343a40;
+    cursor: pointer;
+}
+
+.create_btn button:hover{
+    color: #fff;
+    background: lightcoral;
+    border: 1px solid orangered;
+}
+
+.create_btn{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info_box{
