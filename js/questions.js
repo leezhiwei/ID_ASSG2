@@ -1,5 +1,18 @@
 // creating an array and passing the number, questions, options, and answers
-let questions = [
+var respsend;
+var respget;
+var questions;
+getquestions();
+function waitforqns(){
+  if (respget !== undefined){
+    questions = respget[0]['QuestionList'];
+  }
+  else{
+    setTimeout(waitforqns, 250);
+  }
+}
+waitforqns();
+/* let questions1 = [
     {
     numb: 1,
     question: "Question 1",
@@ -124,4 +137,4 @@ let questions = [
   //     "option 4"
   //   ]
   // },
-];
+]; */
