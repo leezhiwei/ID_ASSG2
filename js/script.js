@@ -1,4 +1,7 @@
-//points per question
+var username;
+var points;
+var prevscores;
+//pts per question
 const ppq = 10;
 //selecting all required elements
 const play_btn = document.querySelector(".play_btn button");
@@ -16,7 +19,7 @@ const nameBox = $('.pname');
 // if startQuiz button clicked
 play_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); //show info box
-    console.log(nameBox.val());
+    username = nameBox.val();
 }
 
 // if exitQuiz button clicked
@@ -170,6 +173,8 @@ function showResult(){
         let scoreTag = '<span>and sorry ;-;, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
+    points = userScore;
+    sendscore({"Name":username,"Score":points});
 }
 
 function startTimer(time){
