@@ -308,6 +308,7 @@ section .que_text{
     color: coral;
 }
 
+/*
 section .option_list{
     padding: 20px 0px;
     display: block;   
@@ -325,6 +326,29 @@ section .option_list .option{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+*/
+
+section .option_list{
+    padding: 20px 0px;
+    display: grid;  
+    grid-template-columns: repeat(2, auto); 
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+section .option_list .option{
+    background: darksalmon;
+    border: 1px solid coral;
+    border-radius: 5px;
+    padding: 20px 15px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items:center;
+    justify-content: space-between;
+    text-align: center;
 }
 
 section .option_list .option:last-child{
