@@ -76,8 +76,19 @@ const proceedbutton = result_box.querySelector(".proceed");
 // if click proceed button
 proceedbutton.onclick = ()=>{
     result_box.classList.remove("activeResult");
+    getscores();
+    waitforscores();
     scoreBoard.addClass("activeScores");
 }
+
+function waitforscores(){
+    if (prevscores !== undefined){
+      console.log(prevscores);
+    }
+    else{
+      setTimeout(waitforscores, 250);
+    }
+  }
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
