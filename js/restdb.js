@@ -65,6 +65,7 @@ function sendscore(data){
   }
   
   $.ajax(settings).done(function (response) {
+    resp = response;
     console.log(response);
   });
 }

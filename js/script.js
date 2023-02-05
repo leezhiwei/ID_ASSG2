@@ -2,6 +2,8 @@ var username;
 var points;
 var prevscores;
 let sortedscores = [];
+var resp;
+var id;
 //pts per question
 const ppq = 10;
 //selecting all required elements
@@ -98,12 +100,13 @@ function waitandsortscores(){
         });
         let scorehtml = addtable();
         tablearea.html(scorehtml);
+        whichplace();
     }
     else{
       setTimeout(waitandsortscores, 250);
     }
-  }
-  function addtable(){
+}
+function addtable(){
     if (!sortedscores || sortedscores.length === 0) {
         console.error("The sortedscores array is either undefined or empty");
         return "";
@@ -115,7 +118,29 @@ function waitandsortscores(){
     scorehtml += `</table>`;
     return scorehtml;
 }
-
+const position = scoreBoard.find('.pos');
+function whichplace(){
+    for (let x = 0; x < sortedscores.length; x++){ 
+        var suffix; 
+        if (sortedscores[x]._id == id){ 
+            let place = x + 1; 
+            if (place == 1){ 
+                suffix = "st"; 
+            } 
+            else if (place == 2){
+                suffix = "nd"; 
+            } 
+            else if (place == 3){
+                suffix = "rd"; 
+            } 
+            else { 
+                suffix = "th"; 
+            } 
+            let innertext = `<p>${sortedscores[x].Name} is in the <b><i><u>${place}${suffix}</b></i></u> place.</p>`; 
+            position.html(innertext);
+        } 
+    }
+}
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
@@ -216,10 +241,20 @@ function showResult(){
         let scoreTag = '<span>and sorry ;-;, You got only <p>'+ userScore +'</p> out of <p>'+ (questions.length * ppq) +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
+    proceedbutton.style.opacity = 0;
     points = userScore;
     sendscore({"Name":username,"Score":points});
+    waitandidresp();
 }
-
+function waitandidresp(){
+    if (resp !== undefined){
+        id = resp._id;
+        proceedbutton.style.opacity = 1;
+    }
+    else{
+      setTimeout(waitandidresp, 250);
+    }
+}
 function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer(){

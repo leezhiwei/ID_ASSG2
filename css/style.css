@@ -584,3 +584,8 @@ table {
 tr {
     padding: 10px 0;
 }
+.pos{
+    font-size:larger;
+    font-weight:bold;
+    color: pink;
+}
