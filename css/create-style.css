@@ -1,13 +1,121 @@
+*{
+    text-align: center;
+}
+
+input{
+    margin: auto;
+    width: 45%;
+    padding: 15px;
+    text-align: left;
+}
+
+label{
+    font-size: 20px;
+    padding: 15px;
+}
+
 body {
     background-color:coral;
 }
 
 .create_border{
-    flex-basis: 30%;
+    margin: auto;
+    width: 60%;
     background-color: #343a40;
     color: coral;
-    border-radius: 20px;
-    margin-bottom: 5%;
-    padding: 30px;
-    align-items: center;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.create_btn{
+    margin-right: 70px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: coral;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: auto;
+}
+
+.create_btn::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: aliceblue;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.create_btn:hover::after{
+    background-color: black;
+    width: auto;
+}
+
+.cancel_btn{
+    margin-right: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 20%;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: auto;
+}
+
+.cancel_btn::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.cancel_btn:hover::after{
+    background-color: coral;
+    width: auto;
+}
+
+.return_btn{
+    margin-right: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: auto;
+}
+
+.return_btn::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.return_btn:hover::after{
+    background-color: coral;
+    width: auto;
 }
