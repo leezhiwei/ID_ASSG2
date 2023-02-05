@@ -576,3 +576,11 @@ footer button.show{
     background: lightcoral;
     border: 1px solid orangered;
 }
+table {
+    border-collapse: separate;
+    border-spacing: 50px 0;
+    color: white;
+}
+tr {
+    padding: 10px 0;
+}

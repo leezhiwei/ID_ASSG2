@@ -76,7 +76,7 @@ quit_quiz.click(()=>{
 });
 
 const proceedbutton = result_box.querySelector(".proceed");
-
+const tablearea = scoreBoard.find(".tableofpeople");
 // if click proceed button
 proceedbutton.onclick = ()=>{
     result_box.classList.remove("activeResult");
@@ -96,11 +96,26 @@ function waitandsortscores(){
             }
             return 0;
         });
+        let scorehtml = addtable();
+        tablearea.html(scorehtml);
     }
     else{
       setTimeout(waitandsortscores, 250);
     }
   }
+  function addtable(){
+    if (!sortedscores || sortedscores.length === 0) {
+        console.error("The sortedscores array is either undefined or empty");
+        return "";
+    }
+
+    let scorehtml = `<table><tr><th>Name</th><th>Score</th></tr>`;
+    for (let x = 0; x < sortedscores.length; x++){
+        scorehtml += `<tr><td>${sortedscores[x].Name}</td><td>${sortedscores[x].Score}</td></tr>`;    }
+    scorehtml += `</table>`;
+    return scorehtml;
+}
+
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
