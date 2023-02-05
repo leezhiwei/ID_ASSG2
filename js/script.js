@@ -51,7 +51,7 @@ const quit_quiz = scoreBoard.find(".quit");
 // if restartQuiz button clicked
 restart_quiz.click(()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
-    result_box.classList.remove("activeResult"); //hide result box
+    scoreBoard.removeClass("activeScores"); //hide result box
     timeValue = 30; 
     que_count = 0;
     que_numb = 1;
