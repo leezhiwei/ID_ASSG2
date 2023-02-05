@@ -111,10 +111,13 @@ function addtable(){
         console.error("The sortedscores array is either undefined or empty");
         return "";
     }
-
     let scorehtml = `<table><tr><th>Name</th><th>Score</th></tr>`;
     for (let x = 0; x < sortedscores.length; x++){
-        scorehtml += `<tr><td>${sortedscores[x].Name}</td><td>${sortedscores[x].Score}</td></tr>`;    }
+        scorehtml += `<tr><td>${sortedscores[x].Name}</td><td>${sortedscores[x].Score}</td></tr>`;
+        if (x == 15){
+            break;
+        }    
+    }
     scorehtml += `</table>`;
     return scorehtml;
 }
