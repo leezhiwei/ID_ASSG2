@@ -19,8 +19,11 @@ const scoreBoard = $('.scoreboard');
 
 // if startQuiz button clicked
 play_btn.onclick = ()=>{
-    info_box.classList.add("activeInfo"); //show info box
     username = nameBox.val();
+    if (username == ""){
+        return;
+    }
+    info_box.classList.add("activeInfo"); //show info box
 }
 
 // if exitQuiz button clicked
