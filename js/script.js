@@ -15,6 +15,7 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 const pointCount = $('div.score');
 const nameBox = $('.pname');
+const scoreBoard = $('.scoreboard');
 
 // if startQuiz button clicked
 play_btn.onclick = ()=>{
@@ -44,11 +45,11 @@ let counter;
 let counterLine;
 let widthValue = 0;
 
-const restart_quiz = result_box.querySelector(".buttons .restart");
-const quit_quiz = result_box.querySelector(".buttons .quit");
+const restart_quiz = scoreBoard.find(".restart");
+const quit_quiz = scoreBoard.find(".quit");
 
 // if restartQuiz button clicked
-restart_quiz.onclick = ()=>{
+restart_quiz.click(()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
     timeValue = 30; 
@@ -63,13 +64,20 @@ restart_quiz.onclick = ()=>{
     startTimer(timeValue); //calling startTimer function
     timeText.textContent = "Time Left"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
-}
+});
 
 // if quitQuiz button clicked
-quit_quiz.onclick = ()=>{
+quit_quiz.click(()=>{
     window.location.reload(); //reload the current window
-}
+});
 
+const proceedbutton = result_box.querySelector(".proceed");
+
+// if click proceed button
+proceedbutton.onclick = ()=>{
+    result_box.classList.remove("activeResult");
+    scoreBoard.addClass("activeScores");
+}
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
