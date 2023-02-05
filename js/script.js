@@ -1,6 +1,7 @@
 var username;
 var points;
 var prevscores;
+let sortedscores = [];
 //pts per question
 const ppq = 10;
 //selecting all required elements
@@ -80,16 +81,24 @@ const proceedbutton = result_box.querySelector(".proceed");
 proceedbutton.onclick = ()=>{
     result_box.classList.remove("activeResult");
     getscores();
-    waitforscores();
+    waitandsortscores();
     scoreBoard.addClass("activeScores");
 }
 
-function waitforscores(){
+function waitandsortscores(){
     if (prevscores !== undefined){
-      console.log(prevscores);
+        sortedscores = prevscores.sort((o1,o2) => {
+            if (o1.Score > o2.Score){
+                return -1;
+            }
+            if (o1.Score < o2.Score){
+                return 1;
+            }
+            return 0;
+        });
     }
     else{
-      setTimeout(waitforscores, 250);
+      setTimeout(waitandsortscores, 250);
     }
   }
 const next_btn = document.querySelector("footer .next_btn");
