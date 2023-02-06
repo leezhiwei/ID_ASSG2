@@ -142,7 +142,7 @@ function whichplace(){
             else { 
                 suffix = "th"; 
             } 
-            let innertext = `<p>${sortedscores[x].Name} is in the <b><i><u>${place}${suffix}</b></i></u> place.</p>`; 
+            let innertext = `<p>${sortedscores[x].Name} is in the <b><u>${place}${suffix}</b></u> place.</p>`; 
             position.html(innertext);
         } 
     }
