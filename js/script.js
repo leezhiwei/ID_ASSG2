@@ -20,6 +20,9 @@ const pointCount = $('div.score');
 const nameBox = $('.pname');
 const scoreBoard = $('.scoreboard');
 
+const infoboxjq = $(".info_box");
+const restart = infoboxjq.find('.restart');
+restart.hide();
 // if startQuiz button clicked
 play_btn.onclick = ()=>{
     username = nameBox.val();
@@ -245,6 +248,7 @@ function showResult(){
         scoreText.innerHTML = scoreTag;
     }
     proceedbutton.style.opacity = 0;
+    proceedbutton.style.visibility = 'hidden';
     points = userScore;
     sendscore({"Name":username,"Score":points});
     waitandidresp();
@@ -253,6 +257,7 @@ function waitandidresp(){
     if (resp !== undefined){
         id = resp._id;
         proceedbutton.style.opacity = 1;
+        proceedbutton.style.visibility = 'visible';
     }
     else{
       setTimeout(waitandidresp, 250);

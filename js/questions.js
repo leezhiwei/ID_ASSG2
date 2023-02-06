@@ -6,6 +6,7 @@ getquestions();
 function waitforqns(){
   if (respget !== undefined){
     questions = respget[0]['QuestionList'];
+    restart.show();
   }
   else{
     setTimeout(waitforqns, 250);
