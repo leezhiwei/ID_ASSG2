@@ -4,6 +4,7 @@ var prevscores;
 let sortedscores = [];
 var resp;
 var id;
+let qid = 0;
 //pts per question
 const ppq = 10;
 //selecting all required elements
@@ -19,15 +20,33 @@ const timeCount = document.querySelector(".timer .timer_sec");
 const pointCount = $('div.score');
 const nameBox = $('.pname');
 const scoreBoard = $('.scoreboard');
-
+const quizid = $('.qcode');
 const infoboxjq = $(".info_box");
 const restart = infoboxjq.find('.restart');
 restart.hide();
+
 // if startQuiz button clicked
 play_btn.onclick = ()=>{
     username = nameBox.val();
     if (username == ""){
         return;
+    }
+    let qidtext = quizid.val();
+    if (qidtext == ""){
+        qid = 0;
+    }
+    else {
+        qid = parseInt(qidtext);
+        if (qid == NaN){
+            qid = 0;
+        }
+        qid -= 1;
+    }
+    console.log(qid);
+    waitforqns(qid);
+    if (respget[qid].CreatorName == username){
+        window.alert("A creator cannot play their own quiz");
+        location.reload();
     }
     info_box.classList.add("activeInfo"); //show info box
 }
@@ -92,7 +111,13 @@ proceedbutton.onclick = ()=>{
 
 function waitandsortscores(){
     if (prevscores !== undefined){
-        sortedscores = prevscores.sort((o1,o2) => {
+        let inthisquiz = [];
+        for (let x = 0; x < prevscores.length; x++){
+            if (prevscores[x].QuizID == (qid + 1).toString()){
+                inthisquiz.push(prevscores[x]);
+            }
+        }
+        sortedscores = inthisquiz.sort((o1,o2) => {
             if (o1.Score > o2.Score){
                 return -1;
             }
@@ -250,7 +275,7 @@ function showResult(){
     proceedbutton.style.opacity = 0;
     proceedbutton.style.visibility = 'hidden';
     points = userScore;
-    sendscore({"Name":username,"Score":points,"QuizID":1});
+    sendscore({"Name":username,"Score":points,"QuizID":(qid + 1)});
     waitandidresp();
 }
 function waitandidresp(){
