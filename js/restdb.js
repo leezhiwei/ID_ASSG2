@@ -30,6 +30,7 @@ function sendquestion(data){
   }
   $.ajax(settings).done(function (response) {
     respsend = response;
+    console.log(respsend);
   });
 }
 function getscores(){
