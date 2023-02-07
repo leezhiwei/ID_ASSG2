@@ -12,10 +12,16 @@
 </head>
 <body>
     <h1>CREATE Quiz</h2>
-    <p>Please fill in every option & answer in the quiz format</p>
+    <p>Please fill in <b>every</b> option & answer for creation of Quiz</p>
 
     <div class="create_border">
         <form>
+            <label for="quiz_name">Name of Quiz</label><br>
+            <input type="text" id="q_name" placeholder="Enter Quiz Name" required><br>
+            <input type="text" id="q_cname" placeholder="Enter Creator's Name" required><br>
+            <br>
+            <br>
+            <br>
             <label for="question_1">Question 1:</label><br>
             <input type="text" id="q1_op1" name="question_1" placeholder="Option 1" required><br>
             <input type="text" id="q1_op2" name="question_2" placeholder="Option 2" required><br>
@@ -122,8 +128,7 @@
             <br>
             <br>
             <br>
-            <!--<button type="reset" class="return_btn">Return</button>-->
-            <a href="../index.html" class="start_hylink"><button type="reset" class="return_btn">Return</button></a>
+            <a href="../index.html" class="return_btn">Return</a>
             <br>
           </form>
           <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
