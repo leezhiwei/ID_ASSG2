@@ -28,12 +28,17 @@ Responsive Interactions / Website Testing
 Technologies / Language Implemented
 
 - HTML
-
+  - Base for score, time format
+  - Custom create Quiz Form
 - CSS
-
+  - Created different style for buttons, paddings and textbox inputs
+  - a href added to link different pages: Play or Create
 - JavaScript
+  - Gradient chaning for backgrounds, alternating with different colours
+  - Made use of JavaScript to change questions on a single HTML page 
+- API
+  - RestDB implemented to generate questions, both default or custom created questions
 
-  
 &nbsp;
 &nbsp;
 &nbsp;
@@ -43,7 +48,9 @@ Content / Media Images & Descriptions
 
 
 Acknowledgements / Sources of Inspiration
-- Quiz Making, used this video tutorial as a base on how to create a quiz
+- JavaScript Animated Background (Gradient changing)
+  Website Link - https://speckyboy.com/css-javascript-animated-backgrounds/
+- Quiz Making, used this video tutorial as a base on how to create a quiz with JavaScript.
   Youtube Tutorial Link - https://www.youtube.com/watch?v=pQr4O1OITJo&ab_channel=CodingNepal 
 - TypeWriter Effect
   -  CSS-TRICKS - Link : https://css-tricks.com/snippets/css/typewriter-effect/
