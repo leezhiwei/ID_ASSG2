@@ -43,7 +43,7 @@ body {
 .pname{
     position: absolute;
     margin: auto;
-    width: 15%;
+    width: 25%;
     padding: 15px;
     text-align: center;
     top: 50%;
@@ -56,7 +56,7 @@ body {
 .qcode{
     position: absolute;
     margin: auto;
-    width: 15%;
+    width: 25%;
     padding: 15px;
     text-align: center;
     top: 42%;
