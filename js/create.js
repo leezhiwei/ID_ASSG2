@@ -9,3 +9,4 @@ for (let qn = 1; qn <= 10; qn++){
         }
     }
 }
+$('#return_btn').on('click', function() { window.location.href = '../index.html'});

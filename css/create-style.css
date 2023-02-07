@@ -27,108 +27,58 @@ body {
     padding: 15px;
 }
 
-/*
 .create_btn{
     margin-right: 70px;
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+    padding: 15px 30px;
+    outline: none;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    background:coral;
     cursor: pointer;
-    font-weight: bold;
-    background-color: coral;
-    border: none;
-    border-radius: 20%;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    width: auto;
-}*/
+}
 
-.create_btn{
+.create_btn:hover{
+    color: black;
+    background: lightcoral;
+    border: 1px solid orangered;
+}
+
+.cancel_btn{
     font-size: 25px;
     font-weight: 500;
     color:coral;
     padding: 15px 30px;
     outline: none;
-    border: none;
+    border: 1px solid orangered;
     border-radius: 5px;
     background:white;
     cursor: pointer;
 }
 
-.create_btn::after{
-    content: '';
-    width: 0%;
-    height: 5px;
-    background: aliceblue;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
-}
-
-.create_btn:hover::after{
-    background-color: black;
-    width: auto;
-}
-
-.cancel_btn{
-    margin-right: 0px;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: aliceblue;
-    border: none;
-    border-radius: 20%;
+.cancel_btn:hover{
     color: black;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    width: auto;
-}
-
-.cancel_btn::after{
-    content: '';
-    width: 0%;
-    height: 5px;
-    background: black;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
-}
-
-.cancel_btn:hover::after{
-    background-color: coral;
-    width: auto;
+    background: lightcoral;
+    border: 1px solid orangered;
 }
 
 .return_btn{
-    margin-right: 0px;
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+    padding: 15px 30px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background:black;
     cursor: pointer;
-    font-weight: bold;
-    background-color: black;
-    border: none;
-    border-radius: 20%;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    width: auto;
 }
 
-.return_btn::after{
-    content: '';
-    width: 0%;
-    height: 5px;
+.return_btn:hover{
+    color: black;
     background: white;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
-}
-
-.return_btn:hover::after{
-    background-color: coral;
-    width: auto;
+    border: 1px solid black;
 }
