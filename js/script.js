@@ -250,7 +250,7 @@ function showResult(){
     proceedbutton.style.opacity = 0;
     proceedbutton.style.visibility = 'hidden';
     points = userScore;
-    sendscore({"Name":username,"Score":points});
+    sendscore({"Name":username,"Score":points,"QuizID":1});
     waitandidresp();
 }
 function waitandidresp(){
