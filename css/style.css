@@ -8,21 +8,47 @@
 }
 
 .typewrite{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-weight: bold;
+    position:sticky;
 }
 
-a .start_hylink{
+.start_hylink{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
     color:coral;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #343a40;
+    border: 1px solid #343a40;
+    cursor: pointer;
+}
+
+.start_hylink:hover{
+    color: #fff;
+    background: lightcoral;
+    border: 1px solid orangered;
     text-decoration: none;
 }
 
-a .start_hylink:hover{
-    color:white;
-    text-decoration: none;
+.playcreate_border{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    margin: auto;
+    width: 60%;
+    background-color:#343a40;
+    color: coral;
+    border-radius: 30px;
+    padding: 15px;
+    text-align: center;
+}
+
+.empty_border{
+    border: 1px solid transparent;
+    height: 100px;
 }
 
 body .h1 { 
@@ -116,33 +142,6 @@ body {
     border: 1px solid orangered;
 }
 
-.start_btn button{
-    font-size: 25px;
-    font-weight: 500;
-    color:coral;
-    padding: 15px 30px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background: #343a40;
-    cursor: pointer;
-}
-
-.start_btn button:hover{
-    color: #fff;
-    background: lightcoral;
-    border: 1px solid orangered;
-}
-
-.start_btn{
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .create_btn button{
     font-size: 25px;
     font-weight: 500;
@@ -159,15 +158,6 @@ body {
     color: #fff;
     background: lightcoral;
     border: 1px solid orangered;
-}
-
-.create_btn{
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info_box{
@@ -205,7 +195,6 @@ body {
 
 .info_box .info-list .info span{
     font-weight: 600;
-    /*color: #007bff;*/
     color:coral;
 }
 .info_box .buttons{
@@ -227,14 +216,12 @@ body {
     border: none;
     outline: none;
     border-radius: 5px;
-    /*border: 1px solid #007bff;*/
     border: 1px solid coral;
     transition: all 0.3s ease;
 }
 
 .quiz_box{
     width: 550px;
-    /*background: #fff;*/
     background: #343a40;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -248,7 +235,6 @@ body {
     z-index: 2;
     height: 70px;
     padding: 0 30px;
-    /*background: #fff;*/
     background: #343a40;
     border-radius: 5px 5px 0 0;
     display: flex;

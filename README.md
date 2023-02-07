@@ -32,7 +32,8 @@ Technologies / Language Implemented
   - Custom create Quiz Form
 - CSS
   - Created different style for buttons, paddings and textbox inputs
-  - a href added to link different pages: Play or Create
+  - Created an empty border to allow typewrite to expand wordings without affecting main border
+  - a href created to mimic a button sturcture to link different pages: Play or Create
 - JavaScript
   - Gradient chaning for backgrounds, alternating with different colours
   - Made use of JavaScript to change questions on a single HTML page 
@@ -54,6 +55,8 @@ Acknowledgements / Sources of Inspiration
   Youtube Tutorial Link - https://www.youtube.com/watch?v=pQr4O1OITJo&ab_channel=CodingNepal 
 - TypeWriter Effect
   -  CSS-TRICKS - Link : https://css-tricks.com/snippets/css/typewriter-effect/
+- Empty Border Trick
+  - Stack overflow - Link : https://stackoverflow.com/questions/9612758/add-a-css-border-on-hover-without-moving-the-element
 
    
 &nbsp;
