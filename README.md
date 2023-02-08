@@ -9,13 +9,31 @@ Developing a game called AlterPastel, It is a quiz themed game where players can
 &nbsp;
 &nbsp;
 
+# Individual Contributions
+- Jia xian (Front-End)
+  - Created HTML pages: Index, Play, Create
+  - Learnt & Implemented JavaScript for Quiz questions instead of creating 10 html pages for each question (Pre-API) 
+  - Implemented Responsiveness for HTML pages
+  - CSS buttons, borders & design
+  - Added TypeWriter on Index page via JavaScript
+- Zhi Wei (Back-End)
+  - Implemented RestDB API on existing JavaScript to retrieve questions from RestDB server instead of JavaScript code (Post-API)
+  - Implemented  & Created JavaScript for Quiz Creation to be sent & retrived RestDB 
+  - Added Altering colour backgrounds via JavaScript
+  - Added scoreboard and usernames retrieved from RestDB
+  - Added score & time left calculation
 # Design process / format
+- Used a href instead of buttons to link different html pages
+- 
+
 
 &nbsp;
 &nbsp;
 &nbsp;
 
 # Colour Theme
+- Alternating Background with pastel colours
+- Quiz border with dark themed orange-grey format
 
 &nbsp;
 &nbsp;
@@ -23,7 +41,7 @@ Developing a game called AlterPastel, It is a quiz themed game where players can
 
 # Features
 Responsive Interactions / Website Testing
-
+- Added media screens for mobile ratios 320, 375, 400
 
 Technologies / Language Implemented
 
@@ -39,6 +57,7 @@ Technologies / Language Implemented
   - Made use of JavaScript to change questions on a single HTML page 
 - API
   - RestDB implemented to generate questions, both default or custom created questions
+  - Get leaderboard score from RestDB
 
 &nbsp;
 &nbsp;
@@ -57,6 +76,8 @@ Acknowledgements / Sources of Inspiration
   -  CSS-TRICKS - Link : https://css-tricks.com/snippets/css/typewriter-effect/
 - Empty Border Trick
   - Stack overflow - Link : https://stackoverflow.com/questions/9612758/add-a-css-border-on-hover-without-moving-the-element
+- HTML & CSS Responsive Design
+  - W3schools - Link : https://www.w3schools.com/html/html_responsive.asp 
 
    
 &nbsp;
