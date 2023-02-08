@@ -82,3 +82,87 @@ body {
     background: white;
     border: 1px solid black;
 }
+
+/*Responsive Mobile screens 390*/
+@media(max-width: 390px){
+    .create_border{
+        margin: auto;
+        width: 80%;
+        background-color: #343a40;
+        color: coral;
+        border-radius: 30px;
+        padding: 15px;
+    }
+    input{
+        margin: auto;
+        width: 75%;
+        padding: 15px;
+        text-align: left;
+    }
+    .create_btn{
+        margin:auto;
+        font-size: 25px;
+        font-weight: 500;
+        color:white;
+        padding: 15px 30px;
+        outline: none;
+        border: 1px solid orangered;
+        border-radius: 5px;
+        background:coral;
+        cursor: pointer;
+    }
+    .cancel_btn{
+        margin: auto;
+        font-size: 25px;
+        font-weight: 500;
+        color:coral;
+        padding: 15px 30px;
+        outline: none;
+        border: 1px solid orangered;
+        border-radius: 5px;
+        background:white;
+        cursor: pointer;
+    }
+}
+
+/*Responsive Mobile screens 400*/
+@media(max-width: 414px){
+    .create_border{
+        margin: auto;
+        width: 80%;
+        background-color: #343a40;
+        color: coral;
+        border-radius: 30px;
+        padding: 15px;
+    }
+    input{
+        margin: auto;
+        width: 75%;
+        padding: 15px;
+        text-align: left;
+    }
+    .create_btn{
+        margin:auto;
+        font-size: 25px;
+        font-weight: 500;
+        color:white;
+        padding: 15px 30px;
+        outline: none;
+        border: 1px solid orangered;
+        border-radius: 5px;
+        background:coral;
+        cursor: pointer;
+    }
+    .cancel_btn{
+        margin: auto;
+        font-size: 25px;
+        font-weight: 500;
+        color:coral;
+        padding: 15px 30px;
+        outline: none;
+        border: 1px solid orangered;
+        border-radius: 5px;
+        background:white;
+        cursor: pointer;
+    }
+}
