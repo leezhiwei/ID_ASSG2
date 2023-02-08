@@ -1,4 +1,5 @@
-function getquestions(){
+/*global respget:writable, respsend:writable, prevscores:writable, resp:writable*/
+function getquestions(){ // eslint-disable-line no-unused-vars
 	var settings = {
 		"async": true,
 		"crossDomain": true,
@@ -12,9 +13,10 @@ function getquestions(){
 	};
 	$.ajax(settings).done(function (response) {
 		respget = response;
+		console.log(respget);
 	});
 }
-function sendquestion(data){
+function sendquestion(data){ // eslint-disable-line no-unused-vars
 	var settings = {
 		"async": true,
 		"crossDomain": true,
@@ -33,7 +35,7 @@ function sendquestion(data){
 		console.log(respsend);
 	});
 }
-function getscores(){
+function getscores(){ // eslint-disable-line no-unused-vars
 	var settings = {
 		"async": true,
 		"crossDomain": true,
@@ -48,9 +50,10 @@ function getscores(){
   
 	$.ajax(settings).done(function (response) {
 		prevscores = response;
+		console.log(prevscores);
 	});
 }
-function sendscore(data){
+function sendscore(data){ // eslint-disable-line no-unused-vars
 	var settings = {
 		"async": true,
 		"crossDomain": true,
@@ -67,6 +70,6 @@ function sendscore(data){
   
 	$.ajax(settings).done(function (response) {
 		resp = response;
-		console.log(response);
+		console.log(resp);
 	});
 }

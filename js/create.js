@@ -1,3 +1,4 @@
+/*global getquestions, sendquestion*/
 var respget;
 var qnlist;
 const infopanel = $(".info");

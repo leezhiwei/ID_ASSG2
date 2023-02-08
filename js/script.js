@@ -1,3 +1,4 @@
+/*global respget, waitforqns, getscores, questions, sendscore*/
 var username;
 var points;
 var prevscores;
@@ -208,7 +209,7 @@ function showQuetions(index){
 	const option = option_list.querySelectorAll(".option");
 
 	// set onclick attribute to all available options
-	for(i=0; i < option.length; i++){
+	for(let i=0; i < option.length; i++){
 		option[i].setAttribute("onclick", "optionSelected(this)");
 	}
 }
@@ -217,7 +218,7 @@ let tickIconTag = "<div class=\"icon tick\"><i class=\"fas fa-check\"></i></div>
 let crossIconTag = "<div class=\"icon cross\"><i class=\"fas fa-times\"></i></div>";
 
 //if user clicked on option
-function optionSelected(answer){
+function optionSelected(answer){ // eslint-disable-line no-unused-vars
 	clearInterval(counter); //clear counter
 	clearInterval(counterLine); //clear counterLine
 	let userAns = answer.textContent; //getting user selected option

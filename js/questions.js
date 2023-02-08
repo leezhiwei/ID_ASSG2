@@ -1,9 +1,11 @@
 // creating an array and passing the number, questions, options, and answers
-var respsend;
+/*global restart, getquestions*/
+/*eslint no-unused-vars: "error"*/
+var respsend; // eslint-disable-line no-unused-vars
 var respget;
-var questions;
+var questions; // eslint-disable-line no-unused-vars
 getquestions();
-function waitforqns(index){
+function waitforqns(index){ // eslint-disable-line no-unused-vars
 	if (respget !== undefined){
 		try{
 			questions = respget[index]["QuestionList"];
