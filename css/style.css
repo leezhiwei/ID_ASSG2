@@ -302,19 +302,19 @@ body {
     user-select: none;
 }
 
-section{
+.questions{
     padding: 25px 30px 20px 30px;
     background: #fff;
     background-color: #343a40;
 }
 
-section .que_text{
+.questions .que_text{
     font-size: 25px;
     font-weight: 600;
     color: coral;
 }
 
-section .option_list{
+.questions .option_list{
     padding: 20px 0px;
     display: grid;  
     grid-template-columns: repeat(2, auto); 
@@ -322,7 +322,7 @@ section .option_list{
     margin: 20px 0px;
 }
 
-section .option_list .option{
+.questions .option_list .option{
     background: darksalmon;
     border: 1px solid coral;
     border-radius: 5px;
@@ -335,33 +335,33 @@ section .option_list .option{
     text-align: center;
 }
 
-section .option_list .option:last-child{
+.questions .option_list .option:last-child{
     margin-bottom: 0px;
 }
 
-section .option_list .option:hover{
+.questions .option_list .option:hover{
     color: #fff;
     background:lightcoral;
     border: 1px solid orangered;
 }
 
-section .option_list .option.correct{
+.questions .option_list .option.correct{
     color: #155724;
     background: #d4edda;
     border: 1px solid #c3e6cb;
 }
 
-section .option_list .option.incorrect{
+.questions .option_list .option.incorrect{
     color: #721c24;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
 }
 
-section .option_list .option.disabled{
+.questions .option_list .option.disabled{
     pointer-events: none;
 }
 
-section .option_list .option .icon{
+.questions .option_list .option .icon{
     height: 26px;
     width: 26px;
     border: 2px solid transparent;
