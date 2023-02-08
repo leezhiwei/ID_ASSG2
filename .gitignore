@@ -1,1 +1,4 @@
 **/jsconfig.json
+**/**.json
+**/node_modules
+**/.eslintrc.js
