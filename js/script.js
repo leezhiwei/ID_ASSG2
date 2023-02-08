@@ -38,7 +38,7 @@ play_btn.onclick = ()=>{
 	else {
 		qid = parseInt(qidtext);
 		if (isNaN(qid)){
-			qid = 0;
+			qid = 1;
 		}
 		qid -= 1;
 	}
