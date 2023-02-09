@@ -29,6 +29,11 @@ restart.hide();
 // if startQuiz button clicked
 play_btn.onclick = ()=>{
 	username = nameBox.val();
+	$(".AP_Logo2").hide();
+	$(".typewrite2").hide();
+	$(".qcode").hide();
+	$(".pname").hide();
+	$(".play_btn").hide();
 	if (username == ""){
 		return;
 	}
