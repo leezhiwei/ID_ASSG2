@@ -105,7 +105,7 @@ restart_quiz.click(()=>{
 
 // if quitQuiz button clicked
 quit_quiz.click(()=>{
-	window.location.reload(); //reload the current window
+	window.location.href='../index.html'; //returns back to index home page
 });
 
 const proceedbutton = result_box.querySelector(".proceed");
