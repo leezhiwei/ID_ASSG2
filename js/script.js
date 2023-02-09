@@ -60,6 +60,11 @@ play_btn.onclick = ()=>{
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
 	info_box.classList.remove("activeInfo"); //hide info box
+	$(".AP_Logo2").show();
+	$(".typewrite2").show();
+	$(".qcode").show();
+	$(".pname").show();
+	$(".play_btn").show();
 };
 
 // if continueQuiz button clicked
