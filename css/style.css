@@ -7,9 +7,15 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .typewrite{
     font-weight: bold;
     position:sticky;
+}
+
+.typewrite2{
+    text-align: center;
+    font-weight: bold;
 }
 
 .start_hylink{
@@ -35,7 +41,7 @@
 
 .playcreate_border{
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 20%;
     margin: auto;
     width: 60%;
@@ -72,7 +78,7 @@ body {
     width: 25%;
     padding: 15px;
     text-align: center;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
@@ -85,17 +91,32 @@ body {
     width: 25%;
     padding: 15px;
     text-align: center;
-    top: 42%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.AP_Logo{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.AP_Logo2{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
 .play_btn{
     position: absolute;
     text-align: center;
-    top: 60%;
+    top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
