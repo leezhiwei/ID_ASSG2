@@ -10,7 +10,7 @@ Developing a game called AlterPastel, It is a quiz themed game where players can
 &nbsp;
 
 # Individual Contributions
-- Jia xian (Front-End)
+- Jia Xian (Front-End)
   - Created HTML pages: Index, Play, Create
   - Learnt & Implemented JavaScript for Quiz questions instead of creating 10 html pages for each question (Pre-API) 
   - Implemented Responsiveness for HTML pages
@@ -26,7 +26,6 @@ Developing a game called AlterPastel, It is a quiz themed game where players can
 - Used a href instead of buttons to link different html pages
 - 
 
-
 &nbsp;
 &nbsp;
 &nbsp;
@@ -34,6 +33,7 @@ Developing a game called AlterPastel, It is a quiz themed game where players can
 # Colour Theme
 - Alternating Background with pastel colours
 - Quiz border with dark themed orange-grey format
+With both of these different contrast of colours, it allows the player to feel a wonderful yet mystery feeling while playing the quiz as they scramble through to answer the correct option.
 
 &nbsp;
 &nbsp;
@@ -42,9 +42,15 @@ Developing a game called AlterPastel, It is a quiz themed game where players can
 # Features
 Responsive Interactions / Website Testing
 - Added media screens for mobile ratios 320, 375, 400
+Mobile Responsiveness
+- Iphone
+  - Iphone X, Iphone XR, Iphone 12 Pro, Iphone SE, Iphone 6/7/8 Plus
+- Samsung
+  -  Galaxy S8/S8+, Galaxy S9/S9+, Galaxy S20 Ultra, Galaxy A51/71
+- Google 
+  - Pixel 5 
 
 Technologies / Language Implemented
-
 - HTML
   - Base for score, time format
   - Custom create Quiz Form
@@ -65,7 +71,8 @@ Technologies / Language Implemented
 
 # Credits
 Content / Media Images & Descriptions
-
+- Logo creation
+  Website Link - https://www.freelogodesign.org/ 
 
 Acknowledgements / Sources of Inspiration
 - JavaScript Animated Background (Gradient changing)
