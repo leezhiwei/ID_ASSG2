@@ -56,7 +56,7 @@ form.find(".create_btn").click( () => {
 	}
 	let id = qnlist.length + 1;
 	console.log(id);
-	sendquestion({"QuestionID": id,"QuestionList":arr,"CreatorName":"Lee8219"});
+	sendquestion({"QuestionID": id,"QuestionList":arr,"CreatorName":namecreate});
 	window.scrollTo(0, 0);
 	infopanel.html(`<p><b>Your QuizID is ${id}</b></p><br><p>Wait until browser refreshes before you create another form.</p>`);
 	form.find(".create_btn").prop("disabled", true);
