@@ -602,6 +602,10 @@ tr {
     color: pink;
 }
 
+.qlogo{
+    height: 70px;
+    width: auto;
+}
 
 /*Responsive Mobile screens 390 for index.html*/
 @media(max-width: 390px){
