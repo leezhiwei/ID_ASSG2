@@ -41,7 +41,7 @@
 
 .playcreate_border{
     position: absolute;
-    top: 5%;
+    top: 1%;
     left: 20%;
     margin: auto;
     width: 60%;
@@ -498,6 +498,7 @@ footer button.show{
 .result_box .score_text span p{
     padding: 0 4px;
     font-weight: 600;
+    color:wheat;
 }
 
 .result_box .buttons{
@@ -601,6 +602,27 @@ tr {
     color: pink;
 }
 
+.qlogo{
+    height: 70px;
+    width: auto;
+}
+
+.about_hylink{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 25px;
+    color:coral;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.about_hylink:hover{
+    color: white;
+    text-decoration: none;
+}
 
 /*Responsive Mobile screens 390 for index.html*/
 @media(max-width: 390px){
@@ -634,17 +656,19 @@ tr {
 
 /*Responsive Mobile screens 320 for play.html*/
 @media(max-width: 320px){
+    .AP_Logo2{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
     .qcode{
-        position: absolute;
         margin: auto;
         width: 75%;
-        padding: 15px;
-        text-align: center;
-        top: 42%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: left;
+        top: 50%;
+        left: 50%;
     }
 
     .pname{
@@ -732,10 +756,16 @@ tr {
     }
 
     .result_box .score_text span{
-        margin: auto;
-        font-size: 15px;
+        display: flex;
+        margin: 10px 0;
+        font-size: 11px;
         font-weight: 500;
         color: coral;
+    }
+    
+    .result_box .score_text span p{
+        font-weight: 600;
+        color:wheat;
     }
     
     .scoreboard .buttons{
@@ -773,6 +803,25 @@ tr {
         color: coral;
         background: #fff;
         height: 55px;
+    }
+
+    .questions .que_text{
+        font-size: 15px;
+        font-weight: 600;
+        color: coral;
+    }
+
+    .questions .option_list .option{
+        background: darksalmon;
+        border: 1px solid coral;
+        border-radius: 5px;
+        padding: 20px 15px;
+        font-size: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        align-items:center;
+        justify-content: space-between;
+        text-align: center;
     }
 }
 
@@ -853,6 +902,7 @@ tr {
         width: 110px;
     }
 
+    
     .result_box{
         margin: auto;
         background:#343a40;
@@ -876,10 +926,16 @@ tr {
     }
 
     .result_box .score_text span{
-        margin: auto;
-        font-size: 15px;
+        display: flex;
+        margin: 10px 0;
+        font-size: 11px;
         font-weight: 500;
         color: coral;
+    }
+    
+    .result_box .score_text span p{
+        font-weight: 600;
+        color:wheat;
     }
     
     .scoreboard .buttons{
@@ -917,6 +973,12 @@ tr {
         color: coral;
         background: #fff;
         height: 55px;
+    }
+
+    .questions .que_text{
+        font-size: 15px;
+        font-weight: 600;
+        color: coral;
     }
 }
 
@@ -997,6 +1059,7 @@ tr {
         width: 110px;
     }
 
+    
     .result_box{
         margin: auto;
         background:#343a40;
@@ -1020,10 +1083,16 @@ tr {
     }
 
     .result_box .score_text span{
-        margin: auto;
-        font-size: 15px;
+        display: flex;
+        margin: 10px 0;
+        font-size: 11px;
         font-weight: 500;
         color: coral;
+    }
+    
+    .result_box .score_text span p{
+        font-weight: 600;
+        color:wheat;
     }
     
     .scoreboard .buttons{
@@ -1061,5 +1130,11 @@ tr {
         color: coral;
         background: #fff;
         height: 55px;
+    }
+
+    .questions .que_text{
+        font-size: 15px;
+        font-weight: 600;
+        color: coral;
     }
 }
