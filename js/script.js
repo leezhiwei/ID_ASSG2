@@ -29,14 +29,14 @@ restart.hide();
 // if startQuiz button clicked
 play_btn.onclick = ()=>{
 	username = nameBox.val();
+	if (username == ""){
+		return;
+	}
 	$(".AP_Logo2").hide();
 	$(".typewrite2").hide();
 	$(".qcode").hide();
 	$(".pname").hide();
 	$(".play_btn").hide();
-	if (username == ""){
-		return;
-	}
 	let qidtext = quizid.val();
 	if (qidtext == ""){
 		qid = 0;
