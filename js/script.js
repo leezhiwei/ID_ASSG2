@@ -270,7 +270,7 @@ function showResult(){
 	const scoreText = result_box.querySelector(".score_text");
 	if (userScore >= 70){ // if user scored more than 70 
 		//creating a new span tag and passing the user score number and total question number
-		let scoreTag = "<span>Congratulations! High score of <p>"+ userScore +"</p> out of <p>"+ (questions.length * ppq) +"</p></span>";
+		let scoreTag = "<span>Congratulations! High score<p>"+ userScore +"</p> out of <p>"+ (questions.length * ppq) +"</p></span>";
 		scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
 	}
 	else if(userScore >= 50){ // if user scored more than 50 

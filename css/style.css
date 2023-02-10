@@ -498,6 +498,7 @@ footer button.show{
 .result_box .score_text span p{
     padding: 0 4px;
     font-weight: 600;
+    color:wheat;
 }
 
 .result_box .buttons{
@@ -734,10 +735,16 @@ tr {
     }
 
     .result_box .score_text span{
-        margin: auto;
-        font-size: 15px;
+        display: flex;
+        margin: 10px 0;
+        font-size: 11px;
         font-weight: 500;
         color: coral;
+    }
+    
+    .result_box .score_text span p{
+        font-weight: 600;
+        color:wheat;
     }
     
     .scoreboard .buttons{
@@ -874,6 +881,7 @@ tr {
         width: 110px;
     }
 
+    
     .result_box{
         margin: auto;
         background:#343a40;
@@ -897,10 +905,16 @@ tr {
     }
 
     .result_box .score_text span{
-        margin: auto;
-        font-size: 15px;
+        display: flex;
+        margin: 10px 0;
+        font-size: 11px;
         font-weight: 500;
         color: coral;
+    }
+    
+    .result_box .score_text span p{
+        font-weight: 600;
+        color:wheat;
     }
     
     .scoreboard .buttons{
@@ -938,6 +952,12 @@ tr {
         color: coral;
         background: #fff;
         height: 55px;
+    }
+
+    .questions .que_text{
+        font-size: 15px;
+        font-weight: 600;
+        color: coral;
     }
 }
 
@@ -1018,6 +1038,7 @@ tr {
         width: 110px;
     }
 
+    
     .result_box{
         margin: auto;
         background:#343a40;
@@ -1041,10 +1062,16 @@ tr {
     }
 
     .result_box .score_text span{
-        margin: auto;
-        font-size: 15px;
+        display: flex;
+        margin: 10px 0;
+        font-size: 11px;
         font-weight: 500;
         color: coral;
+    }
+    
+    .result_box .score_text span p{
+        font-weight: 600;
+        color:wheat;
     }
     
     .scoreboard .buttons{
@@ -1082,5 +1109,11 @@ tr {
         color: coral;
         background: #fff;
         height: 55px;
+    }
+
+    .questions .que_text{
+        font-size: 15px;
+        font-weight: 600;
+        color: coral;
     }
 }
