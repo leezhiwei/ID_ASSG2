@@ -41,7 +41,7 @@
 
 .playcreate_border{
     position: absolute;
-    top: 5%;
+    top: 1%;
     left: 20%;
     margin: auto;
     width: 60%;
@@ -605,6 +605,23 @@ tr {
 .qlogo{
     height: 70px;
     width: auto;
+}
+
+.about_hylink{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 25px;
+    color:coral;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.about_hylink:hover{
+    color: white;
+    text-decoration: none;
 }
 
 /*Responsive Mobile screens 390 for index.html*/
